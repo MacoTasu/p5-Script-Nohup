@@ -53,7 +53,7 @@ has filename => (
     lazy    => 1,
     default => sub {
         my $self = shift;
-        $self->basename.'_'.$self->exec_data.$self->file_extention;
+        $self->basename.'_'.$self->exec_date.$self->file_extention;
     },
 );
 
@@ -63,7 +63,7 @@ has file_extention => (
     default  => ".log"
 );
 
-has exec_data => (
+has exec_date => (
     is      => "ro",
     default => sub { localtime->ymd }
 );
