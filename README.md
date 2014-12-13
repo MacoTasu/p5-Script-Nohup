@@ -1,14 +1,17 @@
 # NAME
 
-Script::Nohup - It's new $module
+Script::Nohup - This module can be nohup the processing
 
 # SYNOPSIS
+Just do this by perl script
 
     use Script::Nohup;
 
 # DESCRIPTION
 
-Script::Nohup is ...
+Script::Nohup is can be running to script by nohup.
+
+THE SOFTWARE IS ALPHA QUALITY. API MAY CHANGE WITHOUT NOTICE.
 
 # LICENSE
 
@@ -19,4 +22,4 @@ it under the same terms as Perl itself.
 
 # AUTHOR
 
-MacoTasu <makomacomako@me.com>
+MacoTasu <maco.tasu+github@gmail.com>
