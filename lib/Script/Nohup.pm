@@ -5,7 +5,6 @@ use Mouse::Util::TypeConstraints;
 use 5.008001;
 use utf8;
 use POSIX qw/setsid/;
-use Data::Validator;
 use Path::Class::File;
 use Time::Piece;
 use IO::Handle;
