@@ -3,7 +3,7 @@
 Script::Nohup - This module can be nohup the processing
 
 # SYNOPSIS
-Just do this by perl script
+Just do this
 
     use Script::Nohup;
 
@@ -22,4 +22,4 @@ it under the same terms as Perl itself.
 
 # AUTHOR
 
-MacoTasu <maco.tasu+github@gmail.com>
+MacoTasu <maco.tasu+cpan@gmail.com>
