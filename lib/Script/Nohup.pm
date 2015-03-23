@@ -18,8 +18,9 @@ sub import {
 
     $SIG{HUP} = 'IGNORE';
     print "start  : ".$script_nohup->basename."\n";
-    print "create : ".$script_nohup->filename."\n";
 
+    return if $script_nohup->skip_logging;
+    print "create : ".$script_nohup->filename."\n";
     $script_nohup->_logger();
 }
 
@@ -76,6 +77,12 @@ has file => (
         my $self = shift;
         $self->script->dir->file($self->filename);
     },
+);
+
+has "skip_logging" => (
+    is      => "ro",
+    isa     => "Bool",
+    default => 0,
 );
 
 no Mouse;
